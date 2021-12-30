@@ -6,8 +6,8 @@
 sudo nano /etc/pam.d/sshd
 ```
 
-Add in the following lines
+Add in the following lines to the end of the file
 ```
-echo "# Notify on successful login / log out." > 
-echo "session optional pam_exec.so /etc/notify-ssh-login.sh" > 
+# Notify on successful login / log out.
+session optional pam_exec.so /etc/notify-ssh-login.sh
 ```
