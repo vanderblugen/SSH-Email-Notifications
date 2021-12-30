@@ -13,7 +13,7 @@ sudo mv notify-ssh-login.sh /etc
 sudo chmod a=rx /etc/notify-ssh-login.sh
 ```
 
-## Edit pam/sshd file
+## Edit File for Login Emailing
 
 ```shell 
 sudo nano /etc/pam.d/sshd
