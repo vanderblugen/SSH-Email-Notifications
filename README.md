@@ -11,3 +11,8 @@ Add in the following lines to the end of the file
 # Notify on successful login / log out.
 session optional pam_exec.so /etc/notify-ssh-login.sh
 ```
+
+Download file from this repo and put into appropriate location
+```shell
+
+```
