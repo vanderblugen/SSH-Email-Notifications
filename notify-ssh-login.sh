@@ -24,29 +24,19 @@ END
 fi
 
 echo " " >> $THISFILENAME
+echo " " >> $THISFILENAME
 echo "**********************************************" >> $THISFILENAME
+echo " " >> $THISFILENAME
 echo " " >> $THISFILENAME
 df --output=target,pcent >> $THISFILENAME
 echo " " >> $THISFILENAME
+echo " " >> $THISFILENAME
 echo "**********************************************" >> $THISFILENAME
 echo " " >> $THISFILENAME
-echo "[finger]" >> ~/$THISFILENAME
-finger >> ~/$THISFILENAME
-echo -e $THISSTRING >> ~/$THISFILENAME
-echo "**********************************************" >> $THISFILENAME
-echo " " >> $THISFILENAME
-echo "[w]" 2>&1 | ts >> ~/$THISFILENAME
-w >> ~/$THISFILENAME
-echo -e $THISSTRING >> ~/$THISFILENAME
-echo "**********************************************" >> $THISFILENAME
-echo " " >> $THISFILENAME
-echo "[users]" 2>&1 | ts >> ~/$THISFILENAME
-users >> ~/$THISFILENAME
-echo -e $THISSTRING >> ~/$THISFILENAME
-echo "**********************************************" >> $THISFILENAME
 echo " " >> $THISFILENAME
 env >> $THISFILENAME
-
+echo " " >> $THISFILENAME
+echo " " >> $THISFILENAME
 
 cat $THISFILENAME | gpg -ear "<recipient_email@address>" | mail -a "Subject: Alert - Remote SSH $LOGWHAT notification" -a "X-Custom-Header: yes" "recipient_email@address.com"
 
