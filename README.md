@@ -6,6 +6,13 @@ To install that run this
 sudo apt-get install finger -y
 ```
 
+## Download the script, put in place, and setup permissions
+```shell
+wget https://raw.githubusercontent.com/vanderblugen/SSH-Email-Notifications/main/notify-ssh-login.sh
+sudo mv notify-ssh-login.sh /etc
+sudo chmod a=rx /etc/notify-ssh-login.sh
+```
+
 ## Edit pam/sshd file
 
 ```shell 
