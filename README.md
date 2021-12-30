@@ -1,5 +1,11 @@
 # SSH-Email-Notifications
 
+## Finger is used in the script
+To install that run this
+```shell
+sudo apt-get install finger -y
+```
+
 ## Edit pam/sshd file
 
 ```shell 
