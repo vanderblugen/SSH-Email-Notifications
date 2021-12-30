@@ -39,7 +39,7 @@ env >> $THISFILENAME
 
 cat $THISFILENAME | gpg -ear "<recipient_email@address>" | mail -a "Subject: Alert - Remote SSH $LOGWHAT notification" -a "X-Custom-Header: yes" "recipient_email@address.com"
 
-shred -uvz  ~/$THISFILENAME
+shred -uvz  $THISFILENAME
 
 unset THISFILENAME LOGWHAT
 
