@@ -23,7 +23,7 @@ Add in the following lines to the end of the file
 session optional pam_exec.so /etc/notify-ssh-login.sh
 ```
 
-Download file from this repo and put into appropriate location
+Download [file](https://github.com/vanderblugen/SSH-Email-Notifications/blob/main/notify-ssh-login.sh) from this repo and put into appropriate location
 ```shell
 
 ```
