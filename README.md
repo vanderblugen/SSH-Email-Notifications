@@ -1,11 +1,5 @@
 # SSH-Email-Notifications
 
-## Finger is used in the script
-To install that run this
-```shell
-sudo apt-get install finger -y
-```
-
 ## Download the script, put in place, and setup permissions
 ```shell
 wget https://raw.githubusercontent.com/vanderblugen/SSH-Email-Notifications/main/notify-ssh-login.sh
