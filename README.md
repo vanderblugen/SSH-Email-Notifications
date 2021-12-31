@@ -1,4 +1,7 @@
 # SSH-Email-Notifications
+This is a way to get email notifications when logging in and out via SSH on a Linux based system.  
+
+This has been tested on a RaspberryPi and an Ubuntu system.
 
 ## Download the script, put in place, and setup permissions
 ```shell
