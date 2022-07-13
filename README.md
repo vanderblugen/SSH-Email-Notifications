@@ -10,9 +10,9 @@ wget https://raw.githubusercontent.com/vanderblugen/SSH-Email-Notifications/main
 ```
 
 ## Modify the Email Address in the Script
-`shell
+```shell
 nano notify-ssh-login.sh
-`
+```
 
 Change `recipient_email@address` to the appropriate email address.
 
@@ -34,11 +34,11 @@ Press `<Ctrl+X>` and then `<Enter>` when finished to exit
 
 ## Setup permissions for the Script and Put It In Place
 
-`shell
+```shell
 sudo chown root:root notify-ssh-login.sh
 sudo chmod a=rx notify-ssh-login.sh
 sudo mv notify-ssh-login.sh /etc
-`
+```
 
 ## Edit SSHD file to Trigger Emailing
 
