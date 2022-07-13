@@ -21,7 +21,7 @@ Change `recipient_email@address` to the appropriate email address.
 Replace
 
 ```shell
-cat $THISFILENAME | gpg -ear "<recipient_email@address>" | mail -a "Subject: Alert - Remote SSH $LOGWHAT notification" -a "X-Custom-Header: yes" "recipient_email@address.com"
+cat $THISFILENAME | gpg -ear "recipient_email@address" | mail -a "Subject: Alert - Remote SSH $LOGWHAT notification" -a "X-Custom-Header: yes" "recipient_email@address.com"
 ```
 
 With
