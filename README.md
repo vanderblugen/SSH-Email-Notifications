@@ -56,6 +56,6 @@ session optional pam_exec.so /etc/notify-ssh-login.sh
 Press `<Ctrl+X>` and then `<Enter>` when finished to exit
 
 # All Set
-Log out of the system to verify functionality.  
+Log out of the system and back in to verify functionality.  
 
 An email should be sent after logging in and out of the system via SSH now.
